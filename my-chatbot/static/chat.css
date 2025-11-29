@@ -103,8 +103,7 @@
   cursor: pointer;
 }
 
-/* ---------- Loading Spinner ---------- */
-/* ---------- Bindi Bindi Loader ---------- */
+/* ---------- Loading  ---------- */
 .loader {
   display: flex;
   align-items: center;
