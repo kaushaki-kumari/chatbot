@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Assistant Inno</title>
+    <link rel="stylesheet" href="/static/chat.css" />
+    <link rel="stylesheet" href="/static/data.css" />
+  </head>
+  <body>
+    <header class="brand-header">
+      <img
+        src="/static/images/favicon.png"
+        alt="Innovative Logo"
+        class="brand-logo"
+      />
+      <h1 class="brand-title">
+        Innovative <span>AI</span> Assistant <span>Dashboard</span>
+      </h1>
+    </header>
+
+    <div id="data-box">
+      <h3>AI Assistant Communication Panel</h3>
+
+      <textarea
+        id="detailsInput"
+        placeholder="write your information here..."
+      ></textarea>
+      <p
+        id="errorMsg"
+        style="color: red; font-size: 13px; margin: 5px 0; display: none"
+      >
+        Please enter something before saving.
+      </p>
+
+      <div class="button-group">
+        <button class="btn-save" onclick="saveDetails()">Save</button>
+        <button class="btn-cancel" onclick="cancelDetails()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Table to show saved data -->
+    <div id="savedTable">
+      <h3>Saved Information</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--chat box start-->
+    <div id="chat-widget">
+      <div id="chat-icon" onclick="toggleChat()">💬</div>
+
+      <div id="chat-box">
+        <div class="chat-header">
+          <span>🤖 Inno AI Assistant</span>
+          <button class="close" onclick="toggleChat()">✖</button>
+        </div>
+        <div id="chat-body"></div>
+        <div class="chat-input">
+          <input
+            id="message"
+            type="text"
+            placeholder="Ask question about Inno..."
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/chat.js"></script>
+    <script src="/static/data.js"></script>
+  </body>
+</html>
