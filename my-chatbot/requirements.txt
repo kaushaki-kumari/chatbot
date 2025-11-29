@@ -1,0 +1,12 @@
+flask
+flask-cors
+python-dotenv
+sentence-transformers
+chromadb
+PyPDF2
+anthropic
+numpy
+scikit-learn
+uvicorn
+gunicorn
+pymongo

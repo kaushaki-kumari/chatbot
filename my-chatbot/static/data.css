@@ -1,0 +1,268 @@
+.brand-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.brand-logo {
+    width: 45px;
+    height: 45px;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #334A8B;
+    padding: 0px;
+    margin: 0px;
+}
+
+.brand-title span {
+    color: #F5A720;
+    font-family: cursive;
+}
+
+#data-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#data-box h3,
+#savedTable h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+#detailsInput {
+    width: 80%;
+    max-width: 600px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+}
+
+#detailsInput:focus {
+    border-color: #1E2637;
+}
+
+/* ---------- Buttons ---------- */
+.button-group {
+    margin-top: 10px;
+}
+
+.btn-save,
+.btn-cancel {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-save {
+    background: #334A8B;
+    color: white;
+}
+
+.btn-save:hover {
+    background: #1E2637;
+}
+
+.btn-cancel {
+    background: #ccc;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background: #b7b6b6;
+}
+
+/* ---------- Table Container ---------- */
+#savedTable {
+    width: 90%;
+    margin: 5px auto;
+    font-family: Arial, sans-serif;
+}
+
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Table Styles ---------- */
+#savedTable table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+#savedTable th {
+    background: #334A8B;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    padding: 12px 15px;
+    z-index: 5;
+}
+
+#savedTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+}
+
+#savedTable tr:hover td {
+    background: #f9f9f9;
+}
+
+#savedTable td:first-child {
+    width: 75%;
+}
+
+#savedTable td:last-child {
+    width: 25%;
+}
+
+/* ---------- Edit Box ---------- */
+.edit-box {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: none;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.edit-box:focus {
+    border-color: #334A8B;
+    outline: none;
+}
+
+/* ---------- Buttons inside Table ---------- */
+#savedTable button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#savedTable button:nth-child(1) {
+    background: #4caf50;
+    color: white;
+}
+
+#savedTable button:nth-child(1):hover {
+    background: #3d8f41;
+}
+
+#savedTable button:nth-child(2) {
+    background: #d9534f;
+    color: white;
+    margin-left: 8px;
+}
+
+#savedTable button:nth-child(2):hover {
+    background: #c94542;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .brand-header {
+        gap: 10px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-title {
+        font-size: 22px;
+    }
+
+    .btn-save,
+    .btn-cancel {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    #data-box h3,
+    #savedTable h3 {
+        font-size: 14px;
+    }
+
+    #savedTable th {
+        font-size: 13px;
+    }
+
+    .edit-box {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    #savedTable button {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    #savedTable button:nth-child(2) {
+        margin-left: 5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .brand-header {
+        gap: 8px;
+        margin: 5px 0px;
+    }
+
+    .brand-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .brand-title {
+        font-size: 16px;
+    }
+
+    #savedTable td {
+        padding: 10px 10px;
+    }
+
+    .edit-box {
+        padding: 5px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    #savedTable button {
+        padding: 8px 10px;
+    }
+
+    #savedTable button:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+}
